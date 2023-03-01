@@ -1,4 +1,3 @@
-// constructor for object
 class Book {
   KEY='data';
 
@@ -8,6 +7,8 @@ class Book {
     this.title = document.querySelector('.title-input');
     this.author = document.querySelector('.author-input');
     this.addBtn = document.querySelector('.add-btn');
+    this.lstTitle = document.querySelector('.lst-title');
+    this.underLine = document.querySelector('.underline');
   }
 
   collectionMethod() {
@@ -37,12 +38,14 @@ class Book {
   }
 
   createList(element) {
-    // const newBook = this.getfromLocal();
+    this.lstTitle.innerText = 'All awesome books';
+    this.underLine.id = 'underline';
+    this.ul.classList.add('lst-border');
     const newBook = element;
     const li = document.createElement('li');
     li.innerHTML = `
         <h1 class="title-show">
-        ${newBook.title} by ${newBook.author}
+        " ${newBook.title}" by ${newBook.author}
         </h1>
         `;
     li.id = `${newBook.title}`;
@@ -58,11 +61,9 @@ class Book {
   }
 
   create() {
-    // DOM  for inputs
     const newBook = { title: this.title.value, author: this.author.value };
     this.collection.push(newBook);
     this.createList(newBook);
-    // return collection;
   }
 }
 

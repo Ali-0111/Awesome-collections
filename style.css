@@ -8,6 +8,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -20,23 +24,27 @@ ul {
 }
 
 .main-data {
-  padding: 3rem;
   width: 90%;
-  margin: auto;
-  border: 2px solid orange;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  align-items: center;
 }
 
 .inputs {
-  width: 100%;
-  order: 1;
+  width: fit-content;
+  padding: 1rem;
+  order: 2;
   align-items: center;
+  border: 2px solid black;
 }
 
 .title-input,
 .author-input {
+  width: 30rem;
   font-size: 1.5rem;
   margin: 1.5rem 0;
   padding: 1rem;
+  border: 2px solid black;
 }
 
 .title-show,
@@ -48,13 +56,18 @@ ul {
 
 .add-btn,
 .rmv-btn {
-  border: 1px solid black;
+  border: 2px solid black;
   background-color: white;
   color: black;
   font-size: 1.5rem;
   padding: 0.5rem;
   width: 10rem;
   cursor: pointer;
+  box-shadow: 1px 5px 4px black;
+}
+
+.add-btn {
+  align-self: flex-end;
 }
 
 input::placeholder {
@@ -62,20 +75,45 @@ input::placeholder {
 }
 
 .w-100 {
-  width: 100%;
+  width: 60%;
+}
+
+#underline {
+  width: 20rem;
+  margin: 1rem 0;
+  background-color: black;
+  padding: 0.1rem 0;
+  order: 1;
+}
+
+.lst-title {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 3rem;
+  padding: 1rem;
 }
 
 .lst {
-  order: 2;
-  padding: 1rem 0;
+  order: 3;
   width: 100%;
 }
 
+.lst-border {
+  border: 2px solid black;
+}
+
 li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid gray;
+  padding: 1rem 2rem;
   width: 20rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+ul.lst li:nth-child(odd) {
+  background: #eeee;
+}
+
+ul.lst li:nth-child(even) {
+  background: #ffff;
 }
