@@ -1,7 +1,5 @@
-// constructor for object
 class Book {
   KEY='data';
-
   constructor() {
     this.collection = this.collectionMethod();
     this.ul = document.querySelector('.lst');
@@ -37,7 +35,6 @@ class Book {
   }
 
   createList(element) {
-    // const newBook = this.getfromLocal();
     const newBook = element;
     const li = document.createElement('li');
     li.innerHTML = `
@@ -57,11 +54,9 @@ class Book {
   }
 
   create() {
-    // DOM  for inputs
     const newBook = { title: this.title.value, author: this.author.value };
     this.collection.push(newBook);
     this.createList(newBook);
-    // return collection;
   }
 }
 
