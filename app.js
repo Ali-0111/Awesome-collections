@@ -41,8 +41,9 @@ class Book {
     const newBook = element;
     const li = document.createElement('li');
     li.innerHTML = `
-        <h2 class="title-show">${newBook.title}</h2>
-        <p class="author-show">${newBook.author}</p>
+        <h1 class="title-show">
+        ${newBook.title} by ${newBook.author}
+        </h1>
         `;
     li.id = `${newBook.title}`;
     const rmvBtn = document.createElement('button');
