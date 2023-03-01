@@ -8,6 +8,7 @@ html {
   font-size: 62.5%;
 }
 
+<<<<<<< HEAD
 body {
   font-family: sans-serif;
 }
@@ -19,32 +20,57 @@ body {
   justify-content: flex-start;
 }
 
+=======
+>>>>>>> 85f6790504f7e2e9cabfd2a17d637b46b20be5d8
 ul {
   list-style: none;
 }
 
 .main-data {
+<<<<<<< HEAD
   width: 90%;
   margin: 0 auto;
   font-size: 1.5rem;
   align-items: center;
+=======
+  padding: 3rem;
+  width: 60%;
+  margin: auto;
+  border: 2px solid orange;
+>>>>>>> 85f6790504f7e2e9cabfd2a17d637b46b20be5d8
 }
 
 .inputs {
   width: fit-content;
+<<<<<<< HEAD
   padding: 1rem;
   order: 2;
   align-items: center;
   border: 2px solid black;
+=======
+  order: 1;
+}
+
+.outputs {
+  border-bottom: 2px solid rgb(95, 94, 94);
+  padding: 1rem 0;
+  width: 100%;
+>>>>>>> 85f6790504f7e2e9cabfd2a17d637b46b20be5d8
 }
 
 .title-input,
 .author-input {
+<<<<<<< HEAD
   width: 30rem;
   font-size: 1.5rem;
   margin: 1.5rem 0;
   padding: 1rem;
   border: 2px solid black;
+=======
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+>>>>>>> 85f6790504f7e2e9cabfd2a17d637b46b20be5d8
 }
 
 .title-show,
@@ -56,6 +82,7 @@ ul {
 
 .add-btn,
 .rmv-btn {
+<<<<<<< HEAD
   border: 2px solid black;
   background-color: white;
   color: black;
@@ -68,12 +95,21 @@ ul {
 
 .add-btn {
   align-self: flex-end;
+=======
+  border: none;
+  background-color: rgb(114, 111, 111);
+  font-size: 2rem;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+>>>>>>> 85f6790504f7e2e9cabfd2a17d637b46b20be5d8
 }
 
 input::placeholder {
   font-size: 1.7rem;
 }
 
+<<<<<<< HEAD
 .w-100 {
   width: 60%;
 }
@@ -116,4 +152,21 @@ ul.lst li:nth-child(odd) {
 
 ul.lst li:nth-child(even) {
   background: #ffff;
+=======
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.lst {
+  order: 2;
+}
+
+li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid gray;
+  width: 20rem;
+>>>>>>> 85f6790504f7e2e9cabfd2a17d637b46b20be5d8
 }
