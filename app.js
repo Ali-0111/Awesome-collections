@@ -7,11 +7,8 @@ class Book {
     this.title = document.querySelector('.title-input');
     this.author = document.querySelector('.author-input');
     this.addBtn = document.querySelector('.add-btn');
-<<<<<<< HEAD
     this.lstTitle = document.querySelector('.lst-title');
     this.underLine = document.querySelector('.underline');
-=======
->>>>>>> 85f6790504f7e2e9cabfd2a17d637b46b20be5d8
   }
 
   collectionMethod() {
@@ -41,7 +38,6 @@ class Book {
   }
 
   createList(element) {
-<<<<<<< HEAD
     this.lstTitle.innerText = 'All awesome books';
     this.underLine.id = 'underline';
     this.ul.classList.add('lst-border');
@@ -51,13 +47,6 @@ class Book {
         <h1 class="title-show">
         " ${newBook.title}" by ${newBook.author}
         </h1>
-=======
-    const newBook = element;
-    const li = document.createElement('li');
-    li.innerHTML = `
-        <h2 class="title-show">${newBook.title}</h2>
-        <p class="author-show">${newBook.author}</p>
->>>>>>> 85f6790504f7e2e9cabfd2a17d637b46b20be5d8
         `;
     li.id = `${newBook.title}`;
     const rmvBtn = document.createElement('button');
