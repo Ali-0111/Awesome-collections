@@ -181,6 +181,6 @@ Feel free to check the [issues page](../../issues/).
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
-This work is licensed by <a rel="license" href="#">Cindy Shin</a>.
+This work is licensed by <a rel="license" href="#">MIT </a>.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
