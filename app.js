@@ -1,5 +1,6 @@
 class Book {
   KEY='data';
+  
   constructor() {
     this.collection = this.collectionMethod();
     this.ul = document.querySelector('.lst');
