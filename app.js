@@ -8,12 +8,12 @@ class Book {
     this.author = document.querySelector('.author-input');
     this.addBtn = document.querySelector('.add-btn');
     this.lstTitle = document.querySelector('.lst-title');
-    this.date= new Date().toDateString();
-    this.time= new Date().toLocaleTimeString();
+    this.date = new Date().toDateString();
+    this.time = new Date().toLocaleTimeString();
     this.dateP = document.querySelector('.date');
     this.links = document.querySelectorAll('.nav li');
     this.input = document.querySelector('.inputs');
-    this.list = document.querySelector('.lst');
+    this.list = document.querySelector('.newlst');
     this.contact = document.querySelector('.contact2');
   }
 
@@ -38,20 +38,19 @@ class Book {
 
   browse(e) {
     const element = e.target.className;
-    switch(element) {
+    switch (element) {
       case 'add': this.input.classList.remove('hide');
-      this.list.classList.add('hide');
-      this.contact.classList.add('hide');
-      break;
-      
+        this.list.classList.add('hide');
+        this.contact.classList.add('hide');
+        break;
       case 'list': this.list.classList.remove('hide');
-      this.input.classList.add('hide');
-      this.contact.classList.add('hide');
-      break;
-      case 'contact':
-      this.input.classList.add('hide');
-      this.list.classList.add('hide');
-      this.contact.classList.remove('hide');break;
+        this.input.classList.add('hide');
+        this.contact.classList.add('hide');
+        break;
+      default:
+        this.input.classList.add('hide');
+        this.list.classList.add('hide');
+        this.contact.classList.remove('hide');
     }
   }
 
@@ -92,7 +91,7 @@ class Book {
 
 window.onload = () => {
   const start = new Book();
-  start.dateP.innerText = start.date +" "+ start.time;
+  start.dateP.innerText = `${start.date} ${start.time}`;
   start.addBtn.addEventListener('click', () => {
     start.create();
     start.saveLocal(start.collection, this.key);
@@ -100,8 +99,8 @@ window.onload = () => {
   start.collection.forEach((element) => {
     start.createList(element);
   });
-  start.links.forEach(link =>{
-    link.addEventListener('click',(e)=>{
+  start.links.forEach((link) => {
+    link.addEventListener('click', (e) => {
       start.browse(e);
     });
   });
