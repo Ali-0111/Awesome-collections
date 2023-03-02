@@ -12,22 +12,68 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
   list-style: none;
 }
 
-.main-data {
-  width: 90%;
+.main-head {
+  width: 95%;
   margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+.nav {
+  justify-content: space-between;
+  border: 2px solid black;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav ul {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.nav ul li {
+  padding: 0.5rem 2rem;
+  border-right: 2px solid black;
+}
+
+.nav ul .no-border {
+  border-right: none;
+}
+
+.main-data {
+  width: 95%;
+  min-height: 80vh;
+  padding: 0.5rem 1rem;
   font-size: 1.5rem;
   align-items: center;
+}
+
+.date {
+  font-size: 2rem;
+  padding: 1rem;
+  align-self: flex-end;
 }
 
 .inputs {
@@ -35,7 +81,11 @@ ul {
   padding: 1rem;
   order: 2;
   align-items: center;
-  border: 2px solid black;
+}
+
+.input-title {
+  margin: 4rem 0 2rem 0;
+  font-size: 3rem;
 }
 
 .title-input,
@@ -78,14 +128,6 @@ input::placeholder {
   width: 60%;
 }
 
-#underline {
-  width: 20rem;
-  margin: 1rem 0;
-  background-color: black;
-  padding: 0.1rem 0;
-  order: 1;
-}
-
 .lst-title {
   text-align: center;
   margin-top: 1rem;
@@ -94,15 +136,11 @@ input::placeholder {
 }
 
 .lst {
-  order: 3;
   width: 100%;
+  margin: 4rem 0 2rem 0;
 }
 
-.lst-border {
-  border: 2px solid black;
-}
-
-li {
+.lst li {
   padding: 1rem 2rem;
   width: 20rem;
   width: 100%;
@@ -114,6 +152,22 @@ ul.lst li:nth-child(odd) {
   background: #eeee;
 }
 
+
+
 ul.lst li:nth-child(even) {
   background: #ffff;
+}
+
+.footer {
+  width: 95%;
+  border: 2px solid black;
+  padding: 1.5rem 1rem;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+/*Hide classes*/
+
+.hide {
+  display: none;
 }

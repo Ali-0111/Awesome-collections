@@ -8,7 +8,17 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <header class="main-head ">
+        <nav class="nav flex2">
+            <a href="#" id="logo">Awesome Books</a>
+            <ul class="flex2">
+                <li><a class="list" href="#">List</a></li>
+                <li><a href="#" class="add">Add new</a></li>
+                <li class="no-border"><a href="#" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex">
         <section class="main-data flex">
             <div class="inputs flex">
                 <h2 class="input-title">Add a new book</h2>
@@ -16,13 +26,20 @@
                 <input class="author-input" type="text" min="5" max="20" placeholder="Author">
                 <button class="add-btn" type="button">Add</button>
             </div>
-            <span class="underline"></span>
+            <p class="date"></p>
             <div class="w-100">
-                <h2 class="lst-title"></h2>
-                <ul class="lst flex"></ul>
+                <ul class="lst flex">
+                    <h2 class="lst-title"></h2>
+                </ul>
+            </div>
+            <div class="w-100 flex contact2">
+                <h2>Emails here</h2>
             </div>
         </section>
     </main>
+    <footer class="flex2 footer">
+        <h2>All Rights Reserved &copy; 2023</h2>
+    </footer> 
     <script src="./app.js"></script>
 </body>
 </html>
