@@ -8,7 +8,17 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <header class="main-head ">
+        <nav class="nav flex2">
+            <a href="#" id="logo">Awesome Books</a>
+            <ul class="flex2">
+                <li><a class="list" href="#">List</a></li>
+                <li><a href="#" class="add">Add new</a></li>
+                <li class="no-border"><a href="#" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex">
         <section class="main-data flex">
             <div class="inputs flex">
                 <h2 class="input-title">Add a new book</h2>
@@ -16,13 +26,32 @@
                 <input class="author-input" type="text" min="5" max="20" placeholder="Author">
                 <button class="add-btn" type="button">Add</button>
             </div>
-            <span class="underline"></span>
-            <div class="w-100">
+            <p class="date"></p>
+            <div class="w-100 newlst hide">
                 <h2 class="lst-title"></h2>
-                <ul class="lst flex"></ul>
+                <ul class="lst flex">
+                </ul>
+            </div>
+            <div class="w-100 flex contact2 hide">
+                <h2 class="lst-title">Contact Information</h2>
+                <div class="texts">
+                    <p>
+                        Do you have any questions or you just want to say "Hello"?
+                        <br> 
+                        you can reach out to us!
+                    </p>
+                    <ul class="contact-details">
+                        <li>Our email: abcde@gmail.com</li>
+                        <li>Our Phone number: 07496-65-12599</li>
+                        <li>Our Address: Streat name 22, 84503 City, Country</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
+    <footer class="flex2 footer">
+        <h2>All rights reserved &copy; 2023</h2>
+    </footer> 
     <script src="./app.js"></script>
 </body>
 </html>
