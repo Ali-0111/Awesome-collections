@@ -53,6 +53,14 @@ ul {
   justify-content: space-between;
 }
 
+.lst li {
+  padding: 1rem 2rem;
+  width: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav ul li {
   padding: 0.5rem 2rem;
   border-right: 2px solid black;
@@ -91,10 +99,10 @@ ul {
 .title-input,
 .author-input {
   width: 30rem;
-  font-size: 1.5rem;
   margin: 1.5rem 0;
   padding: 1rem;
   border: 2px solid black;
+  font-size: 2rem;
 }
 
 .title-show,
@@ -138,26 +146,39 @@ input::placeholder {
 .lst {
   width: 100%;
   margin: 4rem 0 2rem 0;
-}
-
-.lst li {
-  padding: 1rem 2rem;
-  width: 20rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  border: 2px solid black;
 }
 
 ul.lst li:nth-child(odd) {
   background: #eeee;
 }
 
-
-
 ul.lst li:nth-child(even) {
   background: #ffff;
 }
 
+/* Contact section */
+.contact2 {
+  margin-top: 4rem;
+}
+
+.texts {
+  margin: 2rem;
+}
+
+.texts p {
+  font-size: 2.5rem;
+}
+
+.contact-details {
+  padding: 0 2rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+/* footer  */
 .footer {
   width: 95%;
   border: 2px solid black;
@@ -166,7 +187,7 @@ ul.lst li:nth-child(even) {
   justify-content: flex-start;
 }
 
-/*Hide classes*/
+/* Hide classe */
 
 .hide {
   display: none;
